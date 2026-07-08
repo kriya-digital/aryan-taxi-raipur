@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&family=Mukta:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Font Family Overrides */
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Mukta', 'Outfit', sans-serif;
+
+  /* Custom Color Tokens mapping to CSS variables for Theme Toggle */
+  --color-taxi-gold: #FFB300;
+  --color-taxi-gold-hover: #FFC107;
+  --color-taxi-gold-light: #FFE082;
+  --color-taxi-gold-glow: rgba(255, 179, 0, 0.15);
+  
+  --color-bg-dark: var(--bg-main);
+  --color-bg-darker: var(--bg-inner);
+  --color-card-dark: var(--bg-card);
+  --color-card-border: var(--border-card);
+  --color-gold-border: var(--border-gold);
+  
+  --color-text-primary: var(--text-main);
+  --color-text-secondary: var(--text-muted);
+  --color-text-muted: var(--text-dimmed);
+}
+
+/* Theme Design Tokens Variables */
+:root {
+  color-scheme: light;
+  
+  --bg-main: #F3F4F6;
+  --bg-inner: #FFFFFF;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --border-card: rgba(0, 0, 0, 0.08);
+  --border-gold: rgba(255, 179, 0, 0.35);
+  
+  --text-main: #111111;
+  --text-muted: #4B5563;
+  --text-dimmed: #888888;
+}
+
+.dark {
+  color-scheme: dark;
+  
+  --bg-main: #0A0A0A;
+  --bg-inner: #050505;
+  --bg-card: rgba(18, 18, 18, 0.75);
+  --border-card: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(255, 179, 0, 0.25);
+  
+  --text-main: #FFFFFF;
+  --text-muted: #A0A0A0;
+  --text-dimmed: #666666;
+}
+
+/* Custom Base Styles */
+@layer base {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  /* Make form selectors look neat in light mode */
+  select option {
+    background-color: var(--color-bg-darker);
+    color: var(--color-text-primary);
+  }
+}
+
+/* Utilities & Glassmorphism */
+.glass-panel {
+  background: var(--color-card-dark);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-card-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .glass-panel {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel:hover {
+  border-color: var(--color-gold-border);
+  box-shadow: 0 8px 32px 0 rgba(255, 179, 0, 0.08);
+}
+
+/* Hide scrollbars for navbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
