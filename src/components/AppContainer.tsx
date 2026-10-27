@@ -102,7 +102,7 @@ export const AppContainer: React.FC = () => {
 Please confirm my booking availability for this route. Thank you!`;
 
     const encodedMessage = encodeURIComponent(messageText);
-    const whatsappUrl = `https://wa.me/917000811242?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/918815614056?text=${encodedMessage}`;
 
     window.open(whatsappUrl, '_blank');
   };
@@ -172,7 +172,7 @@ Please confirm my booking availability for this route. Thank you!`;
               )}
             </button>
 
-            <a href="tel:+919876543210" className="hidden md:flex bg-gradient-to-r from-taxi-gold to-[#E69D00] text-black font-bold text-sm py-2.5 px-5 rounded-lg items-center gap-2 shadow-[0_4px_14px_rgba(255,179,0,0.2)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(255,179,0,0.35)] transition-all duration-300">
+            <a href="tel:+918815614056" className="hidden md:flex bg-gradient-to-r from-taxi-gold to-[#E69D00] text-black font-bold text-sm py-2.5 px-5 rounded-lg items-center gap-2 shadow-[0_4px_14px_rgba(255,179,0,0.2)] hover:translate-y-[-2px] hover:shadow-[0_6px_20px_rgba(255,179,0,0.35)] transition-all duration-300">
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
               </svg>
@@ -329,7 +329,7 @@ Please confirm my booking availability for this route. Thank you!`;
                                         WhatsApp
                                       </button>
                                       <a
-                                        href="tel:+917000811242"
+                                        href="tel:+918815614056"
                                         className="bg-white/5 border border-taxi-gold/30 hover:border-taxi-gold text-taxi-gold hover:text-black hover:bg-taxi-gold py-1.5 px-3 rounded-lg text-xs font-bold flex items-center gap-1 shadow-[0_3px_8px_rgba(0,0,0,0.15)] transition-all duration-300 cursor-pointer outline-none"
                                         title="Call Now"
                                       >
@@ -365,7 +365,7 @@ Please confirm my booking availability for this route. Thank you!`;
                                         </svg>
                                       </button>
                                       <a
-                                        href="tel:+917000811242"
+                                        href="tel:+918815614056"
                                         className="bg-white/5 border border-taxi-gold/30 hover:border-taxi-gold text-taxi-gold hover:text-black hover:bg-taxi-gold p-2 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer outline-none shadow-[0_3px_10px_rgba(0,0,0,0.15)]"
                                         title="Call Now"
                                       >
@@ -415,7 +415,7 @@ Please confirm my booking availability for this route. Thank you!`;
                     </div>
                     <div className="flex flex-col">
                       <h4 className="text-sm font-semibold font-display text-text-primary">Phone Number</h4>
-                      <p className="text-sm text-text-secondary hover:text-taxi-gold transition-colors duration-300"><a href="tel:+919876543210">+91 98765 43210</a></p>
+                      <p className="text-sm text-text-secondary hover:text-taxi-gold transition-colors duration-300"><a href="tel:+918815614056">+91 88156 14056</a></p>
                     </div>
                   </div>
 

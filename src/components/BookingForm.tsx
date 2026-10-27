@@ -36,7 +36,7 @@ const LOCAL_FLAT_RATES = {
   luxury: 5000
 };
 
-const WHATSAPP_NUMBER = "917000811242";
+const WHATSAPP_NUMBER = "918815614056";
 
 // 10 Cities of Chhattisgarh
 const CITIES = [

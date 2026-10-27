@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const WHATSAPP_NUMBER = "917000811242";
+const WHATSAPP_NUMBER = "918815614056";
 
 export const ContactForm: React.FC = () => {
   const [name, setName] = useState('');
